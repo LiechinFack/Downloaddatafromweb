@@ -1,0 +1,10 @@
+#C# coding
+string Url = "https://google.com.vn" // Example
+{
+    // Download image
+    using (WebClient wc = new WebClient())
+    {
+        //wc.DownloadFile(Url, "..\\..\\OUT_IMG_DV\\" + initialListIdx[i] + ".jpeg");
+        wc.DownloadFile(Url, foldername + "\\" + initialListIdx[i] + ".jpeg");
+    }
+}
